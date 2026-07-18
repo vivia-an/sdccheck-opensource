@@ -1,5 +1,8 @@
 # TrainAudit Core
 
+> **Anonymous artifact (double-blind review).** Author identity and canonical repo URL are
+> withheld until camera-ready. See [`ANONYMOUS_RELEASE.md`](ANONYMOUS_RELEASE.md).
+
 Self-contained reference for **verified constraint mining**:
 Pattern Catalog → multi-agent FSM → Accept (CE ∧ Conf) → healthy-run → SQL verifier.
 

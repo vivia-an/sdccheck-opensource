@@ -16,12 +16,12 @@ def _roots() -> List[Path]:
         return [Path(p.strip()) for p in raw.split(os.pathsep) if p.strip()]
     here = Path(__file__).resolve()
     core_root = here.parents[1]  # core_algo/
-    # monorepo: .../lsk ; packed: may only have core tree
+    # Optional monorepo roots; packed release may only ship this package tree.
     candidates = [
         Path(os.environ.get("SDC_FRAMEWORK_ROOT", "")),
         core_root,
-        core_root.parent,  # sdccheck/
-        here.parents[3] if len(here.parents) > 3 else core_root,  # lsk/
+        core_root.parent,
+        here.parents[3] if len(here.parents) > 3 else core_root,
         here.parents[3] / "Megatron-LM" if len(here.parents) > 3 else core_root,
     ]
     # de-dup existing dirs

@@ -131,7 +131,7 @@ def discover_healthy_dbs() -> List[str]:
     # Prefer toy DB shipped with core, then monorepo Megatron clean dumps.
     here = Path(__file__).resolve()
     core_root = here.parents[1]  # .../core_algo
-    workspace = here.parents[3] if len(here.parents) > 3 else core_root  # .../lsk
+    workspace = here.parents[3] if len(here.parents) > 3 else core_root
     preferred = [
         core_root / "data" / "toy_merged.db",
         workspace / "Megatron-LM/normal_db/tp_normal/Collector/merged_coredump.db",
