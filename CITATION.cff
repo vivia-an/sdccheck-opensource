@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: If you use this software, please cite the TrainAudit paper.
+title: "TrainAudit Core: Verified Constraint Mining for Silent Training Errors"
+type: software
+authors:
+  - family-names: TrainAudit
+    given-names: Authors
+license: MIT
+repository-code: "https://github.com/vivia-an/sdccheck"
+keywords:
+  - silent errors
+  - distributed training
+  - invariant mining
+  - data quality
+preferred-citation:
+  type: article
+  title: "TrainAudit: Verified Constraint Mining for Silent Errors in Distributed LLM Training"
+  authors:
+    - family-names: TrainAudit
+      given-names: Authors
+  year: 2026
+  notes: "Update venue/DOI at camera-ready."
